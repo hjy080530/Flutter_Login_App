@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../componants/custom_form.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -21,9 +22,10 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
-
               textAlign: TextAlign.center,
             ),
+            SizedBox(height: 20),
+            CustomForm(),
           ],
         ),
       ),

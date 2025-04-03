@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class CustomTextForm extends StatelessWidget {
+class CustomTextFormField extends StatelessWidget {
   final String text;
 
-  const CustomTextForm({required this.text, Key? key}) : super(key: key); // 수정된 생성자
+  const CustomTextFormField({required this.text, super.key}); // 수정된 생성자
 
   @override
   Widget build(BuildContext context) {
