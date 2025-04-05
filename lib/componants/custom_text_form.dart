@@ -12,7 +12,10 @@ class CustomTextFormField extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
         ),
         SizedBox(height: 10),
         TextFormField(
@@ -22,11 +25,11 @@ class CustomTextFormField extends StatelessWidget {
             hintText: "텍스트를 입력하세요",
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
-              borderSide: BorderSide(color: Colors.grey),
+              borderSide: BorderSide(color: Colors.white),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
-              borderSide: BorderSide(color: Colors.blue),
+              borderSide: BorderSide(color: Colors.deepPurpleAccent),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),

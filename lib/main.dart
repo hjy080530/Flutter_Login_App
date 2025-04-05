@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app_homeworks/pages/login_page.dart'; // 프로젝트 경로 확인
+import 'package:login_app_homeworks/pages/login_page.dart';
 import 'package:login_app_homeworks/pages/home_page.dart';
 
 void main() {

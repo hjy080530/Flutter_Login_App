@@ -14,7 +14,7 @@ class CustomForm extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField(text: "Email"),
+          CustomTextFormField(text: "Email" ,),
           SizedBox(height: medium_gap),
           CustomTextFormField(text: "Password"),
           SizedBox(height: large_gap),

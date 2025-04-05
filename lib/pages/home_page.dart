@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart' show BuildContext, Color, Colors, Container, EdgeInsets, FontWeight, ListView, Scaffold, StatelessWidget, Text, TextAlign, TextStyle, Widget;
+import 'package:flutter/material.dart'; // ✅ 전체 임포트로 변경
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:login_app_homeworks/componants/button.dart';
+import 'package:login_app_homeworks/pages/login_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -14,15 +16,16 @@ class HomePage extends StatelessWidget {
               "assets/oort_logo_flutter.svg",
               height: 80,
             ),
-            Text(
-              "로그인하기",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-
-              textAlign: TextAlign.center,
+            SizedBox(height: 20),
+            CustomButton(
+              text: "로그인하러 가기",
+              onPressed: () {
+                print("로그인 버튼 클릭됨");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
+              },
             ),
           ],
         ),

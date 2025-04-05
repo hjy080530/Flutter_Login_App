@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../componants/custom_form.dart';
+import 'package:login_app_homeworks/componants/button.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -11,10 +12,12 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.all(20),
           children: [
+
             SvgPicture.asset(
               "assets/oort_logo_flutter.svg",
               height: 80,
             ),
+
             Text(
               "Login",
               style: TextStyle(
@@ -24,8 +27,17 @@ class LoginPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+
             SizedBox(height: 20),
+
             CustomForm(),
+
+            CustomButton(
+              text: "로그인하러 가기",
+              onPressed: () {
+                print("로그인 버튼 클릭됨");
+              },
+            ),
           ],
         ),
       ),
