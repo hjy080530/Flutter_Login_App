@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; // ✅ 전체 임포트로 변경
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_app_homeworks/componants/button.dart';
 import 'package:login_app_homeworks/pages/login_page.dart';
@@ -26,6 +26,13 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => LoginPage()),
                 );
               },
+            ),
+            CustomButton(
+              text: "회원가입 하러 가기",
+              onPressed: () {
+                print("회원가입 버튼 클릭됨");
+              },
+              backgroundColor: Colors.black,
             ),
           ],
         ),
